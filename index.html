@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - IT Graduate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/80 backdrop-blur-md z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold gradient-text">Portfolio</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block nav-link">Home</a>
+                <a href="#about" class="block nav-link">About</a>
+                <a href="#education" class="block nav-link">Education</a>
+                <a href="#skills" class="block nav-link">Skills</a>
+                <a href="#projects" class="block nav-link">Projects</a>
+                <a href="#contact" class="block nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="text-center max-w-4xl mx-auto">
+             <div class="hero-image mb-8">
+                <img src="testImage.jpg" alt="ME" class="w-48 h-48 mx-auto rounded-full object-cover border-4 border-purple-500 shadow-2xl animate-float">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
+                Hello, I'm <span class="gradient-text">Cedrick Keanu D. Balos</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
+                Web Developer | IT Graduate 
+            </p>
+            <div class="flex gap-4 justify-center animate-fade-in-delay-2">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-title">About Me</h2>
+            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover-lift">
+                <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                    I'm a recent graduate from the University of the Cordillera with a Bachelor of Science in Information Technology, 
+                    specializing in Web Technology. I'm passionate about creating beautiful, functional, and user-friendly web applications 
+                    that solve real-world problems.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    With a strong foundation in modern web technologies and a keen eye for design, I'm excited to contribute to innovative 
+                    projects and continue growing as a developer. I believe in writing clean, maintainable code and staying updated with 
+                    the latest industry trends.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-title">Education</h2>
+            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover-lift">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🎓</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-2">Bachelor of Science in Information Technology</h3>
+                        <p class="text-xl text-gray-300 mb-2">University of the Cordillera</p>
+                        <p class="text-lg text-purple-300 mb-4">Major in Web Technology Track</p>
+                        <p class="text-gray-400">Fresh Graduate - 2025</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover-lift">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🎓</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-2">Technical-Vocational-Livelihood Track</h3>
+                        <p class="text-xl text-gray-300 mb-2">STI College Baguio</p>
+                        <p class="text-lg text-purple-300 mb-4">Major in IT in Mobile App and Web Development</p>
+                        <p class="text-gray-400">Graduate - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="skill-card">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-3">Frontend Development</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• HTML5 & CSS3</li>
+                        <li>• JavaScript (ES6+)</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• Responsive Design</li>
+                        <li>• React.js</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="text-4xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-bold mb-3">Backend Development</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• PHP</li>
+                        <li>• Node.js</li>
+                        <li>• MySQL</li>
+                        <li>• RESTful APIs</li>
+                        <li>• Firebase</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="text-4xl mb-4">🛠️</div>
+                    <h3 class="text-xl font-bold mb-3">Tools & Technologies</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Git & GitHub</li>
+                        <li>• VS Code</li>
+                        <li>• Figma</li>
+                        <li>• WordPress</li>
+                        <li>• Chrome DevTools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="project 1.jpg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Civil-Civic</h3>
+                    <p class="text-gray-400 mb-4">A wordpress project that I have collaborated with</p>
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <span class="tech-tag">Wordpress tools</span>
+                        <span class="tech-tag">plugins</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://civil-civic.com/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition">Live →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project 2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Baxter ip</h3>
+                    <p class="text-gray-400 mb-4">The project we have worked on during my internship. Mostly worked only in the Frontend</p>
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">Tailwindcss</span>
+                        <span class="tech-tag">Frontend</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://www.baxterip.com.au/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition">Live →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project 3.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Capstone Project</h3>
+                    <p class="text-gray-400 mb-4">Upskill: A webstie for Soft-skill Development Trainings and Workshop</p>
+                    <div class="flex gap-2 flex-wrap mb-4">
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://ckb-uc.github.io/cap/index.html" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition">Live Demo →</a>
+                        <a href="https://github.com/CKB-UC/cap/tree/main" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover-lift">
+                <p class="text-lg text-gray-300 text-center mb-8">
+                    I'm currently open to new opportunities and collaborations. Feel free to reach out!
+                </p>
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" name="name" required class="form-input">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" name="email" required class="form-input">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Message</label>
+                        <textarea name="message" rows="5" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+                <div class="flex justify-center gap-6 mt-8">
+                    <a href="https://github.com" target="_blank" class="social-link">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="social-link">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-8 px-6">
+        <div class="max-w-6xl mx-auto text-center text-gray-400">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p class="mt-2">Built with ❤️ using Tailwind CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
